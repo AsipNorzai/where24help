@@ -1,17 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import { render } from 'react-dom'
+import { browserHistory, Router,IndexRoute, Route, Link } from 'react-router'
 
+import App from './components/App';
+import ItemDisplay from './components/ItemDisplay';
+import ItemListDisplay from './components/ItemListDisplay';
 
-class App extends React.Component {
-  render() {
-    return (
-      <h1>Where it all began!</h1>
-    );
-  }
-};
-
-
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+render((
+  <Router history={browserHistory}>
+      <Route path="/" component={App}>
+        <IndexRoute component={ItemDisplay} />
+        <Route path="tech/:techName" component={ItemListDisplay} />
+      </Route>
+  </Router>
+), document.getElementById('root'));
