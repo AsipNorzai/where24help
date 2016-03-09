@@ -2,10 +2,11 @@ import React from 'react'
 import { render } from 'react-dom'
 import { browserHistory, Router,IndexRoute, Route, Link } from 'react-router'
 
+import data from './techData.json';
+
 import {} from './css/materialize.css';
 import {} from 'materialize-css';
-
-import data from './techData.json';
+import {} from './css/main.css';
 
 // console.log(data.frontEnd[0].links[0].name);
 
