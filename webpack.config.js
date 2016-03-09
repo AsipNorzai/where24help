@@ -20,7 +20,7 @@ module.exports = {
 	      exclude: /node_modules/,
 	      loader: 'babel',
 	      query: {
-	        presets: ['react', 'es2015']
+	        presets: ['react', 'stage-0', 'es2015']
 	      }
 	    },
 			{
@@ -30,6 +30,10 @@ module.exports = {
 			{
 				test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/,
 				loader: "url-loader?limit=10000"
+			},
+			{
+				test: /\.json$/,
+				loader: 'json'
 			}
 	  ]
   },

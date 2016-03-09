@@ -1,5 +1,4 @@
-{
-  "frontEnd": [
+[
       {
         "name": "React",
         "img": "https://pbs.twimg.com/profile_images/446356636710363136/OYIaJ1KK.png",
@@ -82,5 +81,4 @@
           }
         ]
       }
-  ]
-}
+]
