@@ -1,4 +1,4 @@
-# WhereTo4Help
+# Where24Help
 Collection of different places to find help for a particular stack/technology.
 #### Still Adding more(You can help too by either forking or cloning the repo and pull requesting after)
 
@@ -8,7 +8,6 @@ Collection of different places to find help for a particular stack/technology.
 * [Reactiflux](http://join.reactiflux.com/)
 * [React Stackoverflow](http://stackoverflow.com/questions/tagged/reactjs)
 * [Discussion Forum](https://discuss.reactjs.org/)
-* [Freenode IRC](irc://chat.freenode.net/reactjs)
 * [React Twitter](https://twitter.com/reactjs)
 
 ### [Angular 1](https://angularjs.org/)
@@ -23,3 +22,4 @@ Collection of different places to find help for a particular stack/technology.
 * [Gitter Angular2 Community](https://gitter.im/angular/angular)
 * [File Angular2 issues GitHub](https://github.com/angular/angular/issues)
 * [Angular2 Reddit Community](https://www.reddit.com/r/angular2/)
+* [Angular2 Twitter](https://twitter.com/angularjs2)

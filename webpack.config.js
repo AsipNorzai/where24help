@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+
 module.exports = {
 	context: path.resolve('src'),
 	entry: ["./app"],
@@ -21,11 +22,23 @@ module.exports = {
 	      query: {
 	        presets: ['react', 'es2015']
 	      }
-	    }
+	    },
+			{
+				test: /\.css$/,
+				loader: "style-loader!css-loader"
+			},
+			{
+				test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/,
+				loader: "url-loader?limit=10000"
+			}
 	  ]
   },
 
   resolve: {
-    extensions: ['', '.js', '.es6']
+    extensions: ['', 'jsx', '.js', '.es6'],
+		alias: {
+      '$': 'jquery',
+      'jQuery': 'jquery'
+    }
   }
 }
