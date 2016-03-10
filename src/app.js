@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { browserHistory, Router,IndexRoute, Route, Link } from 'react-router'
+import { Router,IndexRoute, Route, Link } from 'react-router'
 
 import data from './techData.json';
 
@@ -16,7 +16,7 @@ import ItemListDisplay from './components/ItemListDisplay';
 
 function run() {
 render((
-  <Router history={browserHistory}>
+  <Router>
       <Route path="/" component={App}>
         <IndexRoute component={() => <ItemDisplay data={data}/>} />
         <Route path="tech/:techName" component={(props) => <ItemListDisplay itemData={data} {...props}/>} />
