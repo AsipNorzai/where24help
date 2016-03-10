@@ -14,11 +14,11 @@ import App from './components/App';
 import ItemDisplay from './components/ItemDisplay';
 import ItemListDisplay from './components/ItemListDisplay';
 
-render((
+window.onload = function () {render((
   <Router history={browserHistory}>
       <Route path="/" component={App}>
         <IndexRoute component={() => <ItemDisplay data={data}/>} />
         <Route path="tech/:techName" component={(props) => <ItemListDisplay itemData={data} {...props}/>} />
       </Route>
   </Router>
-), document.getElementById('root'));
+), document.getElementById('root'))};
