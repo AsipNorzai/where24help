@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router'
 import ItemListDisplay from './ItemListDisplay';
-// import ItemSearch from './ItemSearch';
 
 export default class ItemDisplay extends React.Component {
   constructor(props) {
@@ -24,7 +23,7 @@ export default class ItemDisplay extends React.Component {
       });
     }
     const n = libs.map(n =>
-    <div className="col s8 offset-s2 m4 l2" key={Math.random(Date.now())}>
+    <div className="col s8 offset-s2 m5 l2" key={Math.random(Date.now())}>
         <div className="card">
           <div className="card-image">
             <Link to={`/tech/${n.name}`}><img src={n.img} /></Link>
