@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { browserHistory, Router,IndexRoute, Route, Link } from 'react-router'
+import { hashHistory, Router,IndexRoute, Route, Link } from 'react-router'
 
 import data from './techData.json';
 
@@ -14,11 +14,21 @@ import App from './components/App';
 import ItemDisplay from './components/ItemDisplay';
 import ItemListDisplay from './components/ItemListDisplay';
 
+function run() {
 render((
-  <Router history={browserHistory}>
+  <Router history={hashHistory}>
       <Route path="/" component={App}>
         <IndexRoute component={() => <ItemDisplay data={data}/>} />
         <Route path="tech/:techName" component={(props) => <ItemListDisplay itemData={data} {...props}/>} />
       </Route>
   </Router>
-), document.getElementById('root'));
+), document.getElementById('root'))
+}
+
+const loadedStates = ['complete', 'loaded', 'interactive'];
+
+if (loadedStates.includes(document.readyState) && document.body) {
+  run();
+} else {
+  window.addEventListener('DOMContentLoaded', run, false);
+}
