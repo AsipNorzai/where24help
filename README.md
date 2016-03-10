@@ -1,7 +1,7 @@
 # Where24Help
 Collection of different places to find help for a particular stack/technology.
 
-[Go to Website](asipnorzai.github.io/where24help)
+[Go to Website](asipnorzai.github.io/where24help target="_blank")
 #### Still Adding more(You can help too by either forking or cloning the repo and pull requesting after)
 
 ## FrontEnd
