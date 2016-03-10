@@ -1,3 +1,7 @@
+html {
+  font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+
 body {
   background-color: rgba(255, 163, 0, 0.69);
   color: white;
@@ -9,6 +13,14 @@ body {
 
 span.name {
   font-size: x-large;
-  font-family: sans-serif;
+  /*font-family: sans-serif;*/
   /* margin-top: 10%; */
+}
+
+span.center {
+  box-shadow: 2px 2px black;
+  margin-left: 34%;
+  color: lightyellow;
+  /*font-size: 6.5vw;*/
+  font-size: calc(100% + 5.5vw);
 }

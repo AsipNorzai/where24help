@@ -8,9 +8,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="row">
-          <div className="col s12 m8 offset-m2 center">
-            <h1>Where24Help</h1>
-          </div>
+          <span className="center">Where24Help</span>
           <div className=" col s12 m6 offset-m3 l10 offset-l2">
             {this.props.children}
           </div>

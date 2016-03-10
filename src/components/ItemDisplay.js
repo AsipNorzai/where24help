@@ -40,8 +40,9 @@ export default class ItemDisplay extends React.Component {
           <form className="col s12 m6 offset-m2">
             <div className="row">
               <div className="input-field col s12">
-                <input type="text" value={this.state.searchValue} onChange={this.handleChange}/>
-                <label>Filter Result</label>
+                <i className="tiny material-icons prefix">search</i>
+                <input type="text" id="icon_search" value={this.state.searchValue} onChange={this.handleChange}/>
+                <label htmlFor="icon_search">Filter Result</label>
               </div>
             </div>
           </form>

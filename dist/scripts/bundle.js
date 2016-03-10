@@ -37820,7 +37820,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background-color: rgba(255, 163, 0, 0.69);\n  color: white;\n}\n\n.nameClass {\n    margin-top: 4px;\n}\n\nspan.name {\n  font-size: x-large;\n  font-family: sans-serif;\n  /* margin-top: 10%; */\n}\n", ""]);
+	exports.push([module.id, "html {\n  font-family: GillSans, Calibri, Trebuchet, sans-serif;\n}\n\nbody {\n  background-color: rgba(255, 163, 0, 0.69);\n  color: white;\n}\n\n.nameClass {\n    margin-top: 4px;\n}\n\nspan.name {\n  font-size: x-large;\n  /*font-family: sans-serif;*/\n  /* margin-top: 10%; */\n}\n\nspan.center {\n  box-shadow: 2px 2px black;\n  margin-left: 34%;\n  color: lightyellow;\n  /*font-size: 6.5vw;*/\n  font-size: calc(100% + 5.5vw);\n}\n", ""]);
 
 	// exports
 
@@ -37873,13 +37873,9 @@
 	        'div',
 	        { className: 'row' },
 	        _react2.default.createElement(
-	          'div',
-	          { className: 'col s12 m8 offset-m2 center' },
-	          _react2.default.createElement(
-	            'h1',
-	            null,
-	            'Where24Help'
-	          )
+	          'span',
+	          { className: 'center' },
+	          'Where24Help'
 	        ),
 	        _react2.default.createElement(
 	          'div',
@@ -38002,10 +37998,15 @@
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'input-field col s12' },
-	                _react2.default.createElement('input', { type: 'text', value: this.state.searchValue, onChange: this.handleChange }),
+	                _react2.default.createElement(
+	                  'i',
+	                  { className: 'tiny material-icons prefix' },
+	                  'search'
+	                ),
+	                _react2.default.createElement('input', { type: 'text', id: 'icon_search', value: this.state.searchValue, onChange: this.handleChange }),
 	                _react2.default.createElement(
 	                  'label',
-	                  null,
+	                  { htmlFor: 'icon_search' },
 	                  'Filter Result'
 	                )
 	              )
