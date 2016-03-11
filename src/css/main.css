@@ -5,7 +5,6 @@ html {
 body {
   background-color: #607D8B;
   color: white;
-  display: flex;
 }
 
 .input-field label {

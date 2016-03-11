@@ -8,7 +8,7 @@ export default class ItemListDisplay extends React.Component {
     this.props.itemData.map(data => {
       data.name === techName ? links.push(data.links) : '';
     });
-    const printLinks = links[0].map(link => <a href={link.link} className="collection-item" target="_blank">{link.name}</a>);
+    const printLinks = links[0].map(link => <a href={link.link} key={link.key} className="collection-item" target="_blank">{link.name}</a>);
     return (
       <div className="row">
         <div className="col s12 m8 offset-m1">
