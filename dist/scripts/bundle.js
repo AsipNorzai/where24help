@@ -24774,82 +24774,101 @@
 	module.exports = [
 		{
 			"name": "React",
+			"key": "1",
 			"img": "https://pbs.twimg.com/profile_images/446356636710363136/OYIaJ1KK.png",
 			"links": [
 				{
 					"name": "Official React Help",
+					"key": "1",
 					"link": "https://facebook.github.io/react/support.html"
 				},
 				{
 					"name": "Reactiflux",
+					"key": "2",
 					"link": "http://join.reactiflux.com/"
 				},
 				{
 					"name": "React Stackoverflow",
+					"key": "3",
 					"link": "http://stackoverflow.com/questions/tagged/reactjs"
 				},
 				{
 					"name": "Discussion Forum",
+					"key": "4",
 					"link": "https://discuss.reactjs.org/"
 				},
 				{
 					"name": "React Twitter",
+					"key": "5",
 					"link": "https://twitter.com/reactjs"
 				}
 			]
 		},
 		{
 			"name": "Angular 1",
+			"key": "2",
 			"img": "https://pbs.twimg.com/profile_images/2149314222/square.png",
 			"links": [
 				{
 					"name": "Google Group Angular1",
+					"key": "1",
 					"link": "https://groups.google.com/forum/#!forum/angular"
 				},
 				{
 					"name": "Angular1 Reddit",
+					"key": "2",
 					"link": "https://www.reddit.com/r/angularjs"
 				},
 				{
 					"name": "Stackoverflow Angular1",
+					"key": "3",
 					"link": "http://stackoverflow.com/questions/tagged/angularjs"
 				},
 				{
 					"name": "Angular1 Twitter",
+					"key": "4",
 					"link": "https://twitter.com/angularjs"
 				}
 			]
 		},
 		{
 			"name": "Angular 2",
+			"key": "3",
 			"img": "https://pbs.twimg.com/profile_images/2149314222/square.png",
 			"links": [
 				{
 					"name": "Stackoverflow",
+					"key": "1",
 					"link": "http://stackoverflow.com/questions/tagged/angular2"
 				},
 				{
 					"name": "Stackoverflow Angular2 Form",
+					"key": "2",
 					"link": "http://stackoverflow.com/questions/tagged/angular2-forms"
 				},
 				{
 					"name": "Stackoverflow Angular2 Template",
+					"key": "3",
 					"link": "http://stackoverflow.com/questions/tagged/angular2-template"
 				},
 				{
 					"name": "Gitter Angular2 Community",
+					"key": "4",
 					"link": "https://gitter.im/angular/angular"
 				},
 				{
 					"name": "File Angular2 issues GitHub",
+					"key": "5",
 					"link": "https://github.com/angular/angular/issues"
 				},
 				{
 					"name": "Angular2 Reddit Community",
+					"key": "6",
 					"link": "https://www.reddit.com/r/angular2/"
 				},
 				{
 					"name": "Angular2 Twitter",
+					"key": "7",
 					"link": "https://twitter.com/angularjs2"
 				}
 			]
@@ -37820,7 +37839,7 @@
 
 
 	// module
-	exports.push([module.id, "html {\n  font-family: GillSans, Calibri, Trebuchet, sans-serif;\n}\n\nbody {\n  background-color: rgba(255, 163, 0, 0.69);\n  color: white;\n}\n\n.nameClass {\n    margin-top: 4px;\n}\n\nspan.name {\n  font-size: x-large;\n  /*font-family: sans-serif;*/\n  /* margin-top: 10%; */\n}\n\nspan.center {\n  box-shadow: 2px 2px black;\n  margin-left: 34%;\n  color: lightyellow;\n  /*font-size: 6.5vw;*/\n  font-size: calc(100% + 5.5vw);\n}\n", ""]);
+	exports.push([module.id, "html {\n  font-family: GillSans, Calibri, Trebuchet, sans-serif;\n}\n\nbody {\n  background-color: #607D8B;\n  color: white;\n}\n\n.input-field label {\n    color: #FFFFFF;\n}\n\n.input-field .prefix.active {\n  color: white;\n}\n\ninput[type=text]:focus:not([readonly]) {\n  border-bottom: 1px solid #FFFFFF;\n  box-shadow: 0 1px 0 0 #000000;\n}\n\n.input-field label {\n    color: #FFFFFF;\n}\n\n.btn, .btn-large {\n  background-color: #F44336;\n}\n\n.btn:hover, .btn-large:hover {\n    background-color: #FF9800;\n}\n\n.nameClass {\n  margin-top: 12px;\n  border-top: 2px solid rgba(0, 0, 0, 0.05);\n  padding-top: 3px;\n}\n\nspan.name {\n  font-size: x-large;\n  /*font-family: sans-serif;*/\n  /* margin-top: 10%; */\n}\n\nspan.center {\n  box-shadow: 0px 4px 96px black;\n  margin-left: 34%;\n  color: #F9B256;\n  /*font-size: 6.5vw;*/\n  font-size: calc(100% + 5.5vw);\n}\n", ""]);
 
 	// exports
 
@@ -37954,7 +37973,7 @@
 	      var n = libs.map(function (n) {
 	        return _react2.default.createElement(
 	          'div',
-	          { className: 'col s8 offset-s2 m5 l2', key: Math.random(Date.now()) },
+	          { className: 'col s8 offset-s2 m5 l2', key: n.key },
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'card' },
@@ -38075,7 +38094,7 @@
 	      var printLinks = links[0].map(function (link) {
 	        return _react2.default.createElement(
 	          'a',
-	          { href: link.link, className: 'collection-item', target: '_blank' },
+	          { href: link.link, key: link.key, className: 'collection-item', target: '_blank' },
 	          link.name
 	        );
 	      });
